@@ -22,7 +22,9 @@
     "train": "tsx src/scripts/train.ts"
   },
   "husky": {
-    "pre-commit": "eslint ."
+    "hooks": {
+      "pre-commit": "eslint ."
+    }
   },
   "devDependencies": {
     "@types/node": "^20.2.3",
