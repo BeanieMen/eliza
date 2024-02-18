@@ -21,6 +21,9 @@
     "cli": "tsx --tsconfig ./test/tsconfig.json test/cli.ts --inspect",
     "train": "tsx src/scripts/train.ts"
   },
+  "husky": {
+    "pre-commit": "eslint ."
+  },
   "devDependencies": {
     "@types/node": "^20.2.3",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
@@ -45,6 +48,7 @@
     "dotenv": "^16.0.3",
     "extensionless": "^1.4.5",
     "hellgate": "^2.2.2",
+    "husky": "^9.0.11",
     "natural": "^6.3.0",
     "node-nlp": "^4.27.0",
     "spica-node": "0.0.738-patch5",
